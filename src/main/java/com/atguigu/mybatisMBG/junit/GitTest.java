@@ -45,6 +45,7 @@ public class GitTest {
             User user = mapper.selectByPrimaryKey(6);
             System.out.println(user);
             System.out.println(user.getPassword());
+            System.out.println("hot-fix test");
         }finally {
             sqlSession.close();
         }
