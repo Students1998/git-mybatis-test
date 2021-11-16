@@ -45,6 +45,7 @@ public class GitTest {
             User user = mapper.selectByPrimaryKey(6);
             System.out.println(user);
             System.out.println(user.getPassword());
+            System.out.println("master test");
         }finally {
             sqlSession.close();
         }
