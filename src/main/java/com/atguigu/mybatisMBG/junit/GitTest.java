@@ -16,8 +16,7 @@ public class GitTest {
     private SqlSessionFactory getSqlSessionFactory() throws IOException {
         String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        return sqlSessionFactory;
+        return new SqlSessionFactoryBuilder().build(inputStream);
     }
 
     @Test
