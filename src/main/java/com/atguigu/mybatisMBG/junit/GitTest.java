@@ -46,6 +46,7 @@ public class GitTest {
             System.out.println(user);
             System.out.println(user.getPassword());
             System.out.println("master test");
+            System.out.println("hot-fix test");
         }finally {
             sqlSession.close();
         }
