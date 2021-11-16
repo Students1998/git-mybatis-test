@@ -32,4 +32,20 @@ public class GitTest {
             sqlSession.close();
         }
     }
+
+    /*
+        模拟 hot-fix 分支下的更新
+     */
+    @Test
+    public void test01() throws IOException{
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        try {
+            UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+            User user = mapper.selectByPrimaryKey(6);
+            System.out.println(user);
+        }finally {
+            sqlSession.close();
+        }
+    }
 }
