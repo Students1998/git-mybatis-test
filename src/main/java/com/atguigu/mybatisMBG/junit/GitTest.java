@@ -18,7 +18,11 @@ public class GitTest {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
-
+    
+    
+    /*
+        模拟git 
+     */ 
     @Test
     public void test() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
